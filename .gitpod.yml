@@ -3,3 +3,4 @@ vscode:
   extensions:
     - donjayamanne.githistory
     - mhutchie.git-graph
+    - ms-python.python
