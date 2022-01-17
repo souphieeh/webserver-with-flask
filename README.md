@@ -44,4 +44,30 @@ To further develop the webserver, you first have to stop it. Just navigate to th
 
 Whenever you develop something new, you should always start a new branch in your repository. In the bottom left you can find a button with `master` written on it. Click it and a popup dialog opens. Select `create new branch` from this menu and name your new branch. You can also press `Ctrl+Shift+P` to open up the command palette and search for `Create Branch` and hit `Enter`.
 
-Now you have a new branch to work in, which means you can also just try out stuff. If it does not work, you can always discard your changes with `git reset --hard master`.
+Now you have a new branch to work in, which means you can also just try out stuff. If it does not work, you can always discard your changes by checking out the `master` branch.
+
+### Step 7: Make some Mistakes
+
+In your new branch, open the file `README.md` and delete some paragraphs. Commit these changes. Now open the file `run.py` and add some comments in the code.
+
+### Step 8: Undo your Mistakes
+
+To undo your changes you would just discard the branch you worked on. Hit `Ctrl+Shift+P` and type `git log`. This should open the git history and show you some information on your repository. You should see that your current branch with the many mistakes is at least 2 commits ahead of the master. Since we only did mistakes in this branch, we just want to get rid of it. So checkout the `master` branch and then delete the other branch you created. **Git** will ask you to force delete this branch, since you have not merged it. Just force delete it!
+
+### Step 9: Create another new Branch
+
+Now we are back at a clean state of our repository, and we want to work on some features for our webserver. So we create yet another branch.
+
+### Step 10: Add a new Route
+
+We want to add a new route to our webserver. As a good developper we should not copy code, so we write a new route but we follow the example of the already existing route. The new route should be accessible over `/test` so we should call the function `test` as well. We also create a new template - which we copy - and call it `test.html`. Save all the changes and test it.
+
+### Step 11: Commit the Changes
+
+If our changes are working, we commit them to our new branch.
+
+If you want to make more changes to this page, do it now and commit them. We will merge them into the master afterwards.
+
+### Step 12: Merging your Changes
+
+After you finished all your work on this branch it is time to merge it into the `master` branch. Checkout the `master` branch for this. Then in the git history you select the branch you want to merge, right click this branch ans select `Merge into current branch` this merges your changes into the `master` branch. You can delete the other branch now.
