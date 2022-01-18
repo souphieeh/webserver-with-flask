@@ -71,3 +71,11 @@ If you want to make more changes to this page, do it now and commit them. We wil
 ### Step 12: Merging your Changes
 
 After you finished all your work on this branch it is time to merge it into the `master` branch. Checkout the `master` branch for this. Then in the git history you select the branch you want to merge, right click this branch ans select `Merge into current branch` this merges your changes into the `master` branch. You can delete the other branch now.
+
+### Step 13: Pushing your Changes to the Remote
+
+When you merged your changes with the `master` branch it is time to push them onto the remote repository, so they are accessible for you on every device. You should see a big button in the `source control view` after you merged your changes.
+
+> **Note:**
+>
+> You should not publish any branch. If it is a long lived branch with work that is not finished yet, you should definitly publish it. But if it is only small changes that you can finish in one go, you should not publish the branch.
