@@ -60,7 +60,7 @@ Now we are back at a clean state of our repository, and we want to work on some 
 
 ### Step 10: Add a new Route
 
-We want to add a new route to our webserver. As a good developper we should not copy code, so we write a new route but we follow the example of the already existing route. The new route should be accessible over `/test` so we should call the function `test` as well. We also create a new template - which we copy - and call it `test.html`. Save all the changes and test it.
+We want to add a new route to our webserver. As a good developer we should not copy code, so we write a new route but we follow the example of the already existing route. The new route should be accessible over `/test` so we should call the function `test` as well. We also create a new template - which we copy - and call it `test.html`. Save all the changes and test it.
 
 ### Step 11: Commit the Changes
 
