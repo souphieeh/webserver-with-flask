@@ -79,3 +79,68 @@ When you merged your changes with the `master` branch it is time to push them on
 > **Note:**
 >
 > You should not publish any branch. If it is a long lived branch with work that is not finished yet, you should definitly publish it. But if it is only small changes that you can finish in one go, you should not publish the branch.
+
+### Step 14: Delete the Branch
+
+When you changes are merged, you no longer need the old branch and you can delete it. This is a nice and clean way to finish working on a feature.
+
+### Step 15: Open yet another Branch
+
+We want to work on a unified design for our website that is controlled by templates. Create a new branch `navbar` and start implementing the website general design.
+
+### Step 16: Create a new Template
+
+Create a new template called `base.html` and add your own template code into it. To make your template extendable by others, you have to define some **blocks** inside your template. Just use the following syntax for this:
+
+```
+{% block content %}
+{% endblock %}
+```
+
+Code out how your homepage should look like.
+
+### Step 17: Commit your Changes
+
+Commit the current changes, and continue working on the same branch.
+
+### Step 18: Extend your Template
+
+To extend your template, you create a new file, and in the first line you add `{% extends "base.html" %}`. Now you can overwrite the content of the different blocks you created.
+
+### Step 19: Commit your Changes
+
+Don't forget to commit your changes. Then continue your work on the same branch.
+
+### Step 20: Implement the Navbar
+
+In your `base.html` template, create all the code you need to implement your navbar and the basic design of your website.
+
+### Step 21: Commit and Merge
+
+Commit your changes once again. You are finished with your work in this branch and it is time to merge it. Checkout the `master` branch, and merge your changes from `navbar` into it.
+
+### Step 22: Create a new Branch
+
+Create yet another branch with the name `design-red`. And implement a red design in your CSS.
+
+### Step 23: Create another Design
+
+To compare 2 designs, we can easily do this with branches. Just checkout the `master` branch again and create a new branch starting from there. Now create another design.
+
+### Step 24: Compare the Designs
+
+To compare the different designs, just checkout the branch you want to look at. Then pick the nicer one and merge that into your `master` branch. You can leave the other one open, maybe you want to go back to it later on.
+
+### Step 25: Publish your Branch
+
+Now we have a long lived branch, since we are not sure if we want to throw away the design or if we want to keep it. So we should publish the branch, otherwise it will be lost.
+
+### Step 26: Create a Pull-Request
+
+If you want to contribute to an open-source project, you have to create a pull request. This means that you propose some changes to a repository, and the owner can accept them if he likes. This is a very easy way for the owner to controll what goes into his project and what not.
+
+Create a new pull-request onto the repository you forked from.
+
+> **Note:**
+>
+> Your pull-request will be denied, since you all did the same changes, and we don't want to merge them. But it is a nice way to see what you have done.
